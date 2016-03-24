@@ -1,0 +1,20 @@
+{
+    "name": "spider-manager/spidermanager-for-laravel5",
+    "description": "Spider Mananger for laravel5",
+    "keywords": ["laravel5 Spider", "laravel5 Spider Manager"],
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daozi",
+            "email": "649591475@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+        "psr-4": {
+            "SpiderManager\\": "src/SpiderManager/"
+        }
+    }
+}

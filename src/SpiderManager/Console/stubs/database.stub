@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateSpiderTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('spider_log', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('spider_name')->comment('访问蜘蛛');
+            $table->integer('day')->comment('来访日期');
+            $table->integer('count')->comment('来访次数');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop('sessions');
+    }
+}
